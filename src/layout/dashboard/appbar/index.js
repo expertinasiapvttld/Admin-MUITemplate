@@ -121,7 +121,7 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            React Admin Template
+          Admin Template
           </Typography>
           <AccountPopover />
         </Toolbar>

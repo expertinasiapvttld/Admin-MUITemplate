@@ -1,5 +1,5 @@
 export const color = {
-  main: "#3bb0ba",
+  main: "#000",
   sidebar: "white",
-  topbar: "#3bb0ba",
+  topbar: "#000",
 };

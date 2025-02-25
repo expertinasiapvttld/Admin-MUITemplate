@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { forwardRef } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import logoImg from "../assets/img/noBgBlack.png"
 // @mui
 import { Box, Link } from "@mui/material";
 
@@ -12,16 +13,19 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
       ref={ref}
       component="div"
       sx={{
-        width: 40,
-        height: 40,
-        float: "left",
+        
+      
+      display:"flex",
+      justifyContent:"center",
+      width:"100%",
         // padding: 4,
         ...sx,
       }}
       {...other}
     >
       <img
-        src="https://global-uploads.webflow.com/5e157547d6f791d34ea4e2bf/6087f2b060c7a92408bac811_logo.svg"
+        src={logoImg}
+        style={{width:80}}
         alt="logo"
       />
     </Box>

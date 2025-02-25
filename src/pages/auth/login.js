@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import images from "../../components/assets/img/login.png";
+import images from "../../components/assets/img/bg12.jpg";
 import Logo from "../../components/logo/logo";
 import { Icon } from "@iconify/react";
 import AdminButton from "../../components/adminButton";
@@ -75,8 +75,8 @@ export default function Login() {
         component="main"
         sx={{
           backgroundColor: color.main,
-          height: "100vh",
-          padding: { xs: false, sm: false, md: 10, lg: 10 },
+         
+          padding: { xs: false, sm: false, md: 10, lg: 5 },
         }}
       >
         <CssBaseline />
@@ -86,6 +86,7 @@ export default function Login() {
           xs={false}
           sm={4}
           md={8}
+
           sx={{
             backgroundImage: `url(${images})`,
             backgroundRepeat: "no-repeat",
@@ -93,15 +94,16 @@ export default function Login() {
               t.palette.mode === "light"
                 ? t.palette.grey[50]
                 : t.palette.grey[900],
-            backgroundSize: "cover",
+            backgroundSize: "contain",
             backgroundPosition: "center",
+            height:500
           }}
         />
         <Grid item xs={12} sm={8} md={4} component={Paper} square>
           <Logo />
           <Box
             sx={{
-              my: 17,
+              my: 5,
               mx: 5,
               //   display: "flex",
               flexDirection: "column",

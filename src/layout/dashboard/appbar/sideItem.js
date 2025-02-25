@@ -42,7 +42,7 @@ export default function SideItem(props) {
             >
               {icon}
             </ListItemIcon>
-            <ListItemText primary={title} sx={{ opacity: open ? 1 : 0 }} />
+            <ListItemText primary={title} sx={{ opacity: open ? 1 : 0,color:active ? "white":"" }} />
           </ListItemButton>
         </Link>
       </ListItem>
